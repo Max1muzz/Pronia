@@ -1,0 +1,85 @@
+a:2:{s:4:"data";s:2627:"<li>
+    <a href="/shop/category/trees">
+                            <b>
+                Деревья        <span>(5)</span>
+                    </b>
+            </a>
+    <hr>
+            <ul class="ms-3">
+            <li>
+    <a href="/shop/category/bonsai">
+                    <i class="fa fa-chevron-right"></i>
+                        Бонсай        <span>(1)</span>
+            </a>
+    <hr>
+    </li><li>
+    <a href="/shop/category/ficus">
+                    <i class="fa fa-chevron-right"></i>
+                        Фикус        <span>(1)</span>
+            </a>
+    <hr>
+    </li><li>
+    <a href="/shop/category/fruit">
+                    <i class="fa fa-chevron-right"></i>
+                        Плодовые        <span>(3)</span>
+            </a>
+    <hr>
+            <ul class="ms-3">
+            <li>
+    <a href="/shop/category/citrus">
+                    <i class="fa fa-chevron-right"></i>
+                        Цитрусы        <span>(1)</span>
+            </a>
+    <hr>
+    </li>        </ul>
+    </li>        </ul>
+    </li><li>
+    <a href="/shop/category/flowers">
+                            <b>
+                Цветы        <span>(3)</span>
+                    </b>
+            </a>
+    <hr>
+            <ul class="ms-3">
+            <li>
+    <a href="/shop/category/orhidey">
+                    <i class="fa fa-chevron-right"></i>
+                        Орхидеи        <span>(1)</span>
+            </a>
+    <hr>
+    </li><li>
+    <a href="/shop/category/fialki">
+                    <i class="fa fa-chevron-right"></i>
+                        Фиалки        <span>(1)</span>
+            </a>
+    <hr>
+    </li><li>
+    <a href="/shop/category/draceni">
+                    <i class="fa fa-chevron-right"></i>
+                        Драцены        <span>(1)</span>
+            </a>
+    <hr>
+    </li>        </ul>
+    </li><li>
+    <a href="/shop/category/palm">
+                            <b>
+                Пальмы        <span>(1)</span>
+                    </b>
+            </a>
+    <hr>
+    </li><li>
+    <a href="/shop/category/cactus">
+                            <b>
+                Кактусы        <span>(3)</span>
+                    </b>
+            </a>
+    <hr>
+            <ul class="ms-3">
+            <li>
+    <a href="/shop/category/sukulenti">
+                    <i class="fa fa-chevron-right"></i>
+                        Суккуленты        <span>(1)</span>
+            </a>
+    <hr>
+    </li>        </ul>
+    </li>";s:8:"end_time";i:1634031015;}

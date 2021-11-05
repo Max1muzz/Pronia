@@ -17,13 +17,14 @@ class OrderModel extends AppModel {
         return $order_id;
     }
 
-    public static function saveOrderProduct($order_id, $cart){
+    public static function saveOrderProduct($order_id, $cart, $value){
         $data = '';
         foreach ($cart as $id => $product){
-            $data .= "($order_id, $id, {$product['number']}, '{$product['title']}', {$product['price']}),";
+            $price = round($product['price'] * $value, 1);
+            $data .= "($order_id, $id, {$product['number']}, '{$product['title']}', $price),";
         }
         $data = rtrim($data, ',');
-        R::exec("INSERT INTO order_product (order_id, product_id, qty, title, price_usd) VALUES $data");
+        R::exec("INSERT INTO order_product (order_id, product_id, qty, title, price) VALUES $data");
         return true;
     }
 

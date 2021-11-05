@@ -19,6 +19,6 @@ $app_path = preg_replace("#[^/]+$#", '', $app_path);
 $app_path = str_replace('/public/', '', $app_path);
 
 define("PATH", $app_path);
-define("ADMIN", PATH.'/adminlte');
+define("ADMIN", PATH.'/admin');
 
 require_once ROOT.'/vendor/autoload.php';

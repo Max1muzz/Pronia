@@ -30,7 +30,7 @@ class OrderController extends AppController {
             $data['currency'] = $curr['code'];
             $data['user_id'] = $_SESSION['user']['id'];
             $order_id = OrderModel::saveOrder($data);
-            OrderModel::saveOrderProduct($order_id, $cart);
+            OrderModel::saveOrderProduct($order_id, $cart, $curr['value']);
             $_SESSION['message'] = 'Заказ отправлен в обработку!';
             $cache->delete('cart');
             redirect('/shop/cart');

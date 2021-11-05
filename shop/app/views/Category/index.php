@@ -25,7 +25,11 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 order-2 order-lg-1 pt-5 pt-lg-0">
                     <!--   ----------------------------------------- -->
-                    <?php new \app\widgets\sidebar\Sidebar();?>
+                    <?php new \app\widgets\sidebar\Sidebar($options = [
+                        'tpl' => APP . '/widgets/sidebar/sidebar_tpl/sidebar.php',
+                        'tplAll' => APP . '/widgets/sidebar/sidebar_tpl/allSidebar.php',
+                        'cacheKey' => 'sidebar'
+                    ]);?>
                     <!--   ----------------------------------------- -->
                 </div>
                 <div class="col-xl-9 col-lg-8 order-1 order-lg-2">

@@ -1,0 +1,62 @@
+a:2:{s:4:"data";s:1303:"<option value="1">
+
+    
+                            Деревья</option>
+<option value="5">
+
+            &nbsp;&nbsp;
+    
+                -            Бонсай</option>
+<option value="6">
+
+            &nbsp;&nbsp;
+    
+                -            Фикус</option>
+<option value="11">
+
+            &nbsp;&nbsp;
+    
+                -            Плодовые</option>
+<option value="12">
+
+            &nbsp;&nbsp;
+    
+                --            Цитрусы</option>
+<option value="2">
+
+    
+                            Цветы</option>
+<option value="7">
+
+            &nbsp;&nbsp;
+    
+                -            Орхидеи</option>
+<option value="20">
+
+            &nbsp;&nbsp;
+    
+                --            Ксюша</option>
+<option value="8" selected>
+
+            &nbsp;&nbsp;
+    
+                --            Фиалки</option>
+<option value="10">
+
+            &nbsp;&nbsp;
+    
+                --            Драцены</option>
+<option value="3">
+
+    
+                            Пальмы</option>
+<option value="4">
+
+    
+                            Кактусы</option>
+<option value="9">
+
+            &nbsp;&nbsp;
+    
+                -            Суккуленты</option>
+";s:8:"end_time";i:1636038346;}

@@ -151,6 +151,13 @@
                                     <li>
                                         <a href="/shop/contact">Контакты</a>
                                     </li>
+                                    <?php if (!empty($_SESSION['user'])):?>
+                                        <?php if ($_SESSION['user']['role'] == 'admin'):?>
+                                            <li>
+                                                <a href="/shop/admin"><p class="text-danger">АДМИН-ПАНЕЛЬ</p></a>
+                                            </li>
+                                        <?php endif;?>
+                                    <?php endif;?>
                                 </ul>
                             </nav>
                         </div>
@@ -188,6 +195,13 @@
                                         <li>
                                             <a href="/shop/contact">Контакты</a>
                                         </li>
+                                        <?php if (!empty($_SESSION['user'])):?>
+                                            <?php if ($_SESSION['user']['role'] == 'admin'):?>
+                                                <li>
+                                                    <a href="/shop/admin"><p class="text-danger">АДМИН-ПАНЕЛЬ</p></a>
+                                                </li>
+                                            <?php endif;?>
+                                        <?php endif;?>
                                     </ul>
                                 </nav>
                             </div>
@@ -310,6 +324,13 @@
                                         <span class="mm-text">Контакты</span>
                                     </a>
                                 </li>
+                                <?php if (!empty($_SESSION['user'])):?>
+                                    <?php if ($_SESSION['user']['role'] == 'admin'):?>
+                                        <li>
+                                            <a href="/shop/admin"><p class="text-danger">АДМИН-ПАНЕЛЬ</p></a>
+                                        </li>
+                                    <?php endif;?>
+                                <?php endif;?>
                             </ul>
                         </nav>
                     </div>
@@ -346,9 +367,26 @@
         <div class="global-overlay"></div>
     </header>
     <!-- Main Header Area End Here -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <?php if(isset($_SESSION['error'])): ?>
+                    <div class="alert alert-danger">
+                        <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(isset($_SESSION['success'])): ?>
+                    <div class="alert alert-success">
+                        <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
 
-    <!-- !!! CONTENT insert here !!! -->
+    <!-- -----------------------!!! CONTENT insert here !!!-------------------- -->
     <?=$content;?>
+    <!-- -----------------------!!! CONTENT insert here !!!-------------------- -->
 
     <!-- Begin Footer Area -->
     <div class="footer-area" data-bg-image="/shop/public/images/footer/bg/1-1920x465.jpg">

@@ -20,7 +20,7 @@ class UserController extends AppController {
             }else{
                 $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
                 if($user->save('user')){
-                    //$_SESSION['success'] = 'Пользователь зарегистрирован';
+                    $_SESSION['success'] = 'Пользователь зарегистрирован';
                     redirect('/shop/user/login');
                     exit();
                 }else{

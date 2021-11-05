@@ -12,23 +12,36 @@ class Sidebar {
     protected $data;
     protected $tree;
     protected $sidebarHtml;
+    protected $tpl;
+    protected $tplAll;
+    protected $cacheKey;
 
-    public function __construct() {
+    public function __construct($options = []) {
+
+        $this->getOptions($options);
         $cache = Cache::instance();
-        $this->sidebarHtml = $cache->get('sidebar');
+        $this->sidebarHtml = $cache->get($this->cacheKey);
 
         if(!$this->sidebarHtml){
             $this->data = AppModel::getCategory();
             $this->tree = $this->getTree();
             $this->sidebarHtml = $this->getSidebarHtml($this->tree);
-            $cache->set('sidebar', $this->sidebarHtml);
+            $cache->set($this->cacheKey, $this->sidebarHtml);
         }
         $this->output();
     }
 
+    protected function getOptions($options){
+        foreach($options as $k => $v){
+            if(property_exists($this, $k)){
+                $this->$k = $v;
+            }
+        }
+    }
+
     protected function output(){
         ob_start();
-        require_once __DIR__ . '/sidebar_tpl/allSidebar.php';
+        require_once $this->tplAll;
         echo ob_get_clean();
     }
 
@@ -56,7 +69,7 @@ class Sidebar {
 
     protected function catToTemplate($cat, $id, $num){
         ob_start();
-        require __DIR__ . '/sidebar_tpl/sidebar.php';
+        require $this->tpl;
         return ob_get_clean();
     }
 }

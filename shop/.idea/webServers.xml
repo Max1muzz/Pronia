@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0f3b50c9-5482-4d4f-a005-7efb95167b00" name="plants" url="http://141.8.193.236">
+        <fileTransfer rootFolder="/domains/plants.pp.ua/public_html" host="141.8.193.236" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

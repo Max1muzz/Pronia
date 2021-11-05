@@ -79,7 +79,11 @@ class Pagination{
     public function getParams(){
         $url = $_SERVER['REQUEST_URI'];
         $url = explode('?', $url);
-        $uri = $url[0] . '?';
+        if (isset($_GET['id'])){
+            $uri = $url[0] . '?id='.$_GET['id'].'&';
+        }else{
+            $uri = $url[0] . '?';
+        }
         return $uri;
     }
 

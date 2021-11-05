@@ -8,18 +8,12 @@
         </form>
     </div>
     <div class="widgets-area">
-
         <div class="widgets-item pt-0">
             <h2 class="widgets-title mb-4">Категории</h2>
             <ul>
                 <?=$this->sidebarHtml;?>
             </ul>
         </div>
-
-
-        <!--   ----------------------------------------- -->
-
-        <!--   ----------------------------------------- -->
     </div>
 
 </div>
